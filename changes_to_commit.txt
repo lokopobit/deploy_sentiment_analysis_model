@@ -1,0 +1,37 @@
+train_instance_count and train_instance_type to instance_count and instance_type. 
+
+Also add py_version parameter to pytorch estimator
+
+## MLE folder: tutorials subfolder
+
+https://github.com/udacity/sagemaker-deployment
+
+write to the maintainer with changes in sagemaker version (from 1 to 2) https://sagemaker.readthedocs.io/en/stable/v2.html
+
+1.-
+from sagemaker.amazon.amazon_estimator import image_uris
+container = image_uris.retrieve('xgboost', session.boto_region_name, version='latest')
+
+2.-
+train_instance_count and train_instance_type to instance_count and instance_type. 
+
+3.-
+from sagemaker.inputs import TrainingInput
+s3_input_train = sagemaker.TrainingInput(s3_data=train_location, content_type='csv')
+s3_input_validation = sagemaker.TrainingInput(s3_data=val_location, content_type='csv')
+
+4.- 
+from sagemaker.serializers import CSVSerializer
+
+# We need to tell the endpoint what format the data we are sending is in so that SageMaker can perform the serialization.
+# xgb_predictor.content_type = 'text/csv'
+xgb_predictor.serializer = CSVSerializer()
+
+xgb_predictor.content_type = 'text/csv' error: AttributeError: can't set attribute
+
+## MLE folder: case studies subfolder subfolder
+
+1.- Fraud Detection
+as_matrix() is deprecated, use values instead
+predictor.endpoint is deprecated, use predictor.endpoint_name
+evaluate() function is incorrect: fp definitions are wrong
