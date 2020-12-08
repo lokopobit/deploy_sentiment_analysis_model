@@ -37,3 +37,13 @@ The main code is main\_dsam\_mle.ipynb (dsam stands for deploy sentiment analysi
 
 
 ### Changes between old sagemaker version (1) and latest (2)
+
+### Reviewer comments
+
+Further Resource: Keras has a neat API for visualizing the architecture, which is very helpful while debugging your network. pytorch-summary is a [similar project](https://github.com/sksq96/pytorch-summary/ "similar project") in PyTorch.
+
+Further, AWS Sagemaker recently got a [new update](https://aws.amazon.com/es/blogs/machine-learning/amazon-sagemaker-now-comes-with-new-capabilities-for-accelerating-machine-learning-experimentation/ "new update"). It lets you find and evaluate the most relevant model training runs from the hundreds and thousands of your Amazon SageMaker model training jobs.
+
+### TODO list
+
+Check custom inference code accuracy.
