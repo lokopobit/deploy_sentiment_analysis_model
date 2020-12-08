@@ -38,6 +38,8 @@ The main code is main\_dsam\_mle.ipynb (dsam stands for deploy sentiment analysi
 
 ### Changes between old sagemaker version (1) and latest (2)
 
+See changes\_in\_sagemaker\_version.txt. Take a look to [sagemaker latest version](https://sagemaker.readthedocs.io/en/stable/v2.html "sagemaker_latest_version").
+
 ### Reviewer comments
 
 Further Resource: Keras has a neat API for visualizing the architecture, which is very helpful while debugging your network. pytorch-summary is a [similar project](https://github.com/sksq96/pytorch-summary/ "similar project") in PyTorch.
