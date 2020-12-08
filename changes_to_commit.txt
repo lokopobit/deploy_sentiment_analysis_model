@@ -1,3 +1,6 @@
+
+https://sagemaker.readthedocs.io/en/stable/v2.html
+
 train_instance_count and train_instance_type to instance_count and instance_type. 
 
 Also add py_version parameter to pytorch estimator
