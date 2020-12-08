@@ -51,6 +51,9 @@ def input_fn(serialized_input_data, content_type):
     if content_type == 'text/plain':
         data = serialized_input_data.decode('utf-8')
         return data
+    else:
+        data = serialized_input_data.decode('utf-8')
+        return data
     raise Exception('Requested unsupported ContentType in content_type: ' + content_type)
 
 def output_fn(prediction_output, accept):
