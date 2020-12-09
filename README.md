@@ -1,6 +1,6 @@
 # Introduction
 
-This repository builds a model to classify film reviews as positive or negative, that is, sentiment analysis. The model used is a very simple LSTM neural network architecture defined with Pytorch library. The model is trained and deployed using sagemaker service of Amazon Web Services (AWS).
+This repository builds a model to classify film reviews as positive or negative, that is, sentiment analysis. The model used is a very simple LSTM neural network architecture defined with Pytorch library. The model is trained and deployed using SageMaker service of Amazon Web Services (AWS).
 
 ### Jupyter notebook workflow at a glance
 
